@@ -1,12 +1,12 @@
-(function () {
+(function (message) {
 	const superHero = 'Batman';
-	console.log(superHero);
-})();
+	console.log(message, superHero);
+})("Hello");
 
-(function () {
-	const superHero = 'Superman';
-	console.log(superHero);
-})();
+(function (message) {
+  const superHero = 'Superman';
+  console.log(message, superHero);
+})('Hey');
 
 /**
  * Before a module code is executed, Node.js will wrap it with a function wrapper that provides module scope
