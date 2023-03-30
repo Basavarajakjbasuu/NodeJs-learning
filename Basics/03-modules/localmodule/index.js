@@ -1,4 +1,4 @@
-const addFunction = require("./add") //7
+const addFunction = require('./add'); //7
 // require("./add.js") //7
 
 /**
@@ -7,21 +7,20 @@ const addFunction = require("./add") //7
  */
 
 const sum = addFunction(1, 2);
-console.log(sum)
+console.log(sum);
 
 const sum2 = addFunction(1, 5);
-console.log(sum2)
-
+console.log(sum2);
 
 /**
  * IIFE = Before a module code is executed, Node.js will wrap it with a function wrapper that provides module scope
- * 
+ *
  * This saves us from having to worry about conflicting variables or functions
  *  so proper encapsulation and reusability is unaffected
  */
 
-require("./batman")
-require("./superman")
+require('./batman');
+require('./superman');
 
 /**
  * MODULE CASHING
@@ -38,14 +37,32 @@ require("./superman")
 
 //-------------------------------------------------
 
-const SuperHero = require("./super-hero")
+const SuperHero = require('./super-hero');
 
-const batman = new SuperHero("Batman")
+const batman = new SuperHero('Batman');
 console.log(batman.getName());
-batman.setName("Bruce wayne")
+batman.setName('Bruce wayne');
 console.log(batman.getName());
 
-const superman = new SuperHero("super man")
-console.log(superman.getName())
-superman.setName("Bassu")
-console.log(superman.getName())
+const superman = new SuperHero('super man');
+console.log(superman.getName());
+superman.setName('Bassu');
+console.log(superman.getName());
+
+/**
+ * IMPORT EXPORT Patterns
+ */
+
+// const add = require('../math');
+
+// console.log(add(2, 3));
+
+const math = require('../math');
+console.log(math.add(2, -4)) //-2
+console.log(math.subtract(2, -2)) //4
+
+// extraction
+const { add, subtract } = math
+
+console.log(add(3, -3))
+console.log(subtract(2, 1))
