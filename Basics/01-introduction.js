@@ -23,3 +23,16 @@
  * JavaScriptCore: Apple for safari
  * Chakra: Microsoft for edge
  */
+
+/**
+ * Node.js Runtime - provide all the necessary components in order to use and run the JS
+ * 
+ *  => JS can run in outside of web browser
+ * 
+ *  > Traditional website
+ *  > Backend service like APIs
+ *  > Real time applications
+ *  > Streaming services like netflix
+ *  > CLI tools
+ *  > Multiplayer games
+ */
