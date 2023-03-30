@@ -1,6 +1,7 @@
-const add = (a, b) => {
-	return a + b;
-};
+require("./add") //7
+// require("./add.js") //7
 
-const sum = add(4, 3);
-console.log(sum) //7
+/**
+ * Common Js
+ * its adopted technique from common js to import local module by require function
+ */
