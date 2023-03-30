@@ -22,3 +22,30 @@ console.log(sum2)
 
 require("./batman")
 require("./superman")
+
+/**
+ * MODULE CASHING
+ */
+
+// const superHero = require("./super-hero")
+// console.log(superHero.getName()) //Batman
+// superHero.setName("Common man")
+// console.log(superHero.getName()) //Common man
+
+// const newSuperHero = require("./super-hero")
+
+// console.log(newSuperHero.getName()) //Common man - objet are pass by reference
+
+//-------------------------------------------------
+
+const SuperHero = require("./super-hero")
+
+const batman = new SuperHero("Batman")
+console.log(batman.getName());
+batman.setName("Bruce wayne")
+console.log(batman.getName());
+
+const superman = new SuperHero("super man")
+console.log(superman.getName())
+superman.setName("Bassu")
+console.log(superman.getName())
