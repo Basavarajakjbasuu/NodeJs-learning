@@ -1,7 +1,7 @@
 const add = (a, b) => {
 	return a + b;
 };
-const sum = add(4, 3);
-console.log(sum) //7
+
+module.exports = add // => default export
 
 // all module are isolated
